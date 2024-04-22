@@ -1,0 +1,8 @@
+name: Deploy App
+run-name: ${{ github.actor }} is deploying app
+on: workflow_dispatch
+jobs:
+  Deploy_App:
+    runs-on: ubuntu-latest
+    steps:
+      - run: ansible-playbook playbooks/deploy_app.yml -e USERNAME=${USERNAME} -e URL=${URL} -e APP_NAME=${APP_NAME}

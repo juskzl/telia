@@ -1,0 +1,5 @@
+---
+- name: "Launch application"
+  shell: "/home/{{ USERNAME }}/{{ APP_NAME }}.sh"
+  async: 10
+  poll: 0

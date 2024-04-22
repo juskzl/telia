@@ -1,0 +1,5 @@
+---
+- name: Download and extract package
+  ansible.builtin.unarchive:
+    src: "{{ URL }}"
+    dest: /home/{{ USERNAME }}/

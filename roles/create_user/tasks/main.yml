@@ -1,0 +1,7 @@
+---
+- name: "Ensure the user exists"
+  user:
+    name: "{{ USERNAME }}"
+    shell: /bin/bash
+    state: present
+    createhome: yes
